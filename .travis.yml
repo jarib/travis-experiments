@@ -1,5 +1,6 @@
 before_script:
-  # - sudo -s 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
-  # - sudo apt-get update
-  # - sudo apt-get -y install google-chrome-unstable unzip
-  # - curl -k http://chromium.googlecode.com/files/chromedriver_mac_17.0.963.0.zip | sudo -s 'funzip > /usr/bin/chromedriver'
+  - curl -L -O "http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/116062/chrome-linux.zip"
+  - unzip chrome-linux.zip
+  - curl -L "http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/116062/chrome-linux.test/chromedriver" > chrome-linux/chromedriver
+  - chmod +x chrome-linux/chromedriver
+  - ln -s chrome-linux/chrome chrome-linux/google-chrome
