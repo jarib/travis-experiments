@@ -1,0 +1,5 @@
+before_script:
+  - sudo -s 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+  - sudo apt-get update
+  - sudo apt-get -y install google-chrome-unstable unzip
+  - curl -k http://chromium.googlecode.com/files/chromedriver_mac_17.0.963.0.zip | sudo -s 'funzip > /usr/bin/chromedriver'
