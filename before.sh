@@ -2,7 +2,7 @@
 
 sh -e /etc/init.d/xvfb start
 
-sudo apt-get install -y unzip
+sudo apt-get install -y unzip libxss1
 curl -L -O "http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/116062/chrome-linux.zip"
 unzip chrome-linux.zip
 curl -L "http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/116062/chrome-linux.test/chromedriver" > chrome-linux/chromedriver
