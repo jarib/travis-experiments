@@ -4,6 +4,7 @@ set -x
 
 CHROME_REVISION=191150
 
+sh -e /etc/init.d/xvfb start
 sudo apt-get install -y unzip libxss1
 curl -L -O "http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/$CHROME_REVISION/chrome-linux.zip"
 unzip chrome-linux.zip
