@@ -3,4 +3,4 @@
 set -x
 set -e
 
-env
+env | sort
