@@ -5,9 +5,10 @@ set -e
 
 env | sort
 
-CHROME_REVISION="228611"
-CHROMEDRIVER_VERSION="2.4"
+export CHROME_REVISION="228611"
+export CHROMEDRIVER_VERSION="2.4"
 sh -e /etc/init.d/xvfb start
+export DISPLAY=:99
 
 sudo chmod 1777 /dev/shm
 
