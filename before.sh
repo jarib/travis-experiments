@@ -19,7 +19,7 @@ mv chromedriver chrome-linux/chromedriver
 chmod +x chrome-linux/chromedriver
 sudo chmod 1777 /dev/shm
 
-la -la chrome-linux
+ls -la chrome-linux
 file chrome-linux/chromedriver
 file chrome-linux/chrome
 
