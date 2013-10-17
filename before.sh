@@ -25,4 +25,4 @@ ls -la chrome-linux
 file chrome-linux/chromedriver
 file chrome-linux/chrome
 
-./chrome-linux/chromedriver &
+./chrome-linux/chrome &
