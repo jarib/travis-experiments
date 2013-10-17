@@ -5,7 +5,7 @@ set -e
 
 env | sort
 
-CHROME_REVISION="228616"
+CHROME_REVISION="228611"
 CHROMEDRIVER_VERSION="2.4"
 sh -e /etc/init.d/xvfb start
 
