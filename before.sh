@@ -9,6 +9,9 @@ CHROME_REVISION="228611"
 CHROMEDRIVER_VERSION="2.4"
 sh -e /etc/init.d/xvfb start
 
+ps auxww | grep xvfb
+echo "DISPLAY: #{DISPLAY}"
+
 sudo apt-get install -y unzip libxss1
 curl -L -O "http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/$CHROME_REVISION/chrome-linux.zip"
 unzip chrome-linux.zip
