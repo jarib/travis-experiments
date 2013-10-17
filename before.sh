@@ -20,13 +20,13 @@ unzip chromedriver_linux64.zip
 
 sudo chown root:root chrome-linux/chrome_sandbox
 sudo chmod 4755 chrome-linux/chrome_sandbox
-export CHROME_DEVEL_SANDBOX="$PWD/chrome-linux/chrome_sandbox"
+# export CHROME_DEVEL_SANDBOX="$PWD/chrome-linux/chrome_sandbox"
+export CHROME_DEVEL_SANDBOX=""
 
 mv chromedriver chrome-linux/chromedriver
 chmod +x chrome-linux/chromedriver
 
 ls -la chrome-linux
-file chrome-linux/chromedriver
-file chrome-linux/chrome
+cat /etc/fstab
 
 ./chrome-linux/chrome &
