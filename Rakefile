@@ -7,7 +7,7 @@ task :default do
   
   $DEBUG = true
 
-  d = Selenium::WebDriver.for :chrome
+  d = Selenium::WebDriver.for :chrome, :args => %w[--no-sandbox]
   d.get "http://google.com"
   p d.title
   d.quit
