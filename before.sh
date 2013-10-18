@@ -29,4 +29,6 @@ chmod +x chrome-linux/chromedriver
 ls -la chrome-linux
 cat /etc/fstab
 
+ping -w 5 google.com
+
 ./chrome-linux/chrome &
