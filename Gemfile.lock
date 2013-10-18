@@ -7,10 +7,10 @@ GEM
     multi_json (1.8.2)
     rake (10.1.0)
     rubyzip (1.0.0)
-    selenium-webdriver (2.37.0)
+    selenium-webdriver (2.31.0)
       childprocess (>= 0.2.5)
       multi_json (~> 1.0)
-      rubyzip (~> 1.0.0)
+      rubyzip
       websocket (~> 1.0.4)
     websocket (1.0.7)
 
@@ -19,4 +19,4 @@ PLATFORMS
 
 DEPENDENCIES
   rake
-  selenium-webdriver (= 2.37.0)
+  selenium-webdriver (= 2.31.0)
