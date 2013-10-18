@@ -5,7 +5,7 @@ set -e
 
 env | sort
 
-export CHROME_REVISION="228611"
+export CHROME_REVISION="200836"
 export CHROMEDRIVER_VERSION="2.4"
 sh -e /etc/init.d/xvfb start
 export DISPLAY=:99
@@ -21,8 +21,7 @@ unzip chromedriver_linux64.zip
 
 sudo chown root:root chrome-linux/chrome_sandbox
 sudo chmod 4755 chrome-linux/chrome_sandbox
-# export CHROME_DEVEL_SANDBOX="$PWD/chrome-linux/chrome_sandbox"
-export CHROME_DEVEL_SANDBOX=""
+export CHROME_DEVEL_SANDBOX="$PWD/chrome-linux/chrome_sandbox"
 
 mv chromedriver chrome-linux/chromedriver
 chmod +x chrome-linux/chromedriver
