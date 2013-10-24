@@ -1,9 +1,6 @@
 #/bin/sh
 
-env | sort
+set -x
+set -e
 
-sh -e /etc/init.d/xvfb start
-export DISPLAY=:99
-
-firefox --version
-
+java -version
