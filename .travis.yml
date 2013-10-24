@@ -4,6 +4,4 @@ rvm:
 jdk:
   - openjdk6
 before_script:
-  - ./before.sh
-after_script:
-  - ./after.sh
+  - java -version
