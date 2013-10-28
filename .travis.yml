@@ -1,9 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-jdk:
-  - openjdk6
 before_script:
-  - ./before.sh
-after_script:
-  - ./after.sh
+  - sudo apt-get install -y mtr
+  - mtr --report ops1.holderdeord.no
