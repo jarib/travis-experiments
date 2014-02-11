@@ -4,5 +4,5 @@ rvm:
 before_script:
   - which echo
   - file `which echo`
-  - gem install childprocess
+  - gem install childprocess --pre
   - "ruby -rchildprocess -e '10.times { ChildProcess.posix_spawn = true; pr = ChildProcess.build(%{echo}, %{hello}); pr.io.inherit!; pr.start; pr.poll_for_exit(5);}'"
