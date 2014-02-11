@@ -1,6 +1,8 @@
 language: ruby
 rvm:
-  - 2.0.0
+  - 2.1.0
 before_script:
-  - sudo apt-get install -y mtr
-  - mtr --report ops1.holderdeord.no
+  - which echo
+  - file `which echo`
+  - gem install childprocess
+  - "ruby -rchildprocess -e '10.times { ChildProcess.posix_spawn = true; pr = ChildProcess.build(%{echo}, %{hello}); pr.io.inherit!; pr.start; pr.poll_for_exit(5);}'"
