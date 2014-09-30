@@ -1,5 +1,6 @@
 require 'bundler/setup'
+require 'pp'
 
 task :default do
-  puts "ok"
+  system "env | sort"
 end
