@@ -1,8 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.0
+  - 2.2.5
 script:
-  - which echo
-  - file `which echo`
-  - gem install childprocess --pre
-  - "ruby -rchildprocess -e '10.times { ChildProcess.posix_spawn = true; pr = ChildProcess.build(%{echo}, %{hello}); pr.io.inherit!; pr.start; pr.poll_for_exit(5);}'"
+  - ruby -v
+  - echo hello
