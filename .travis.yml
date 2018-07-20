@@ -13,7 +13,7 @@ install:
   - cp snoop.testing.env snoop.env
   - docker-compose up -d
   - git clone https://github.com/hoover/testdata collections/testdata
-  - sleep 15 && docker-compose logs search-es
+  - sleep 30 && docker-compose logs search-es
 script:
   - docker-compose run search-es bash -c 'curl "http://search-es:9200/_cluster/health?wait_for_status=yellow&timeout=50s"'
 
