@@ -1,0 +1,6 @@
+version: "2"
+
+services:
+  search-es:
+    environment:
+      discovery.type: single-node
