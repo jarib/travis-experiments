@@ -7,8 +7,8 @@ install:
   - cd docker-setup
   - git checkout es6
   - cp ../docker-compose.override.yml ./
-  - mkdir volumes volumes/metrics volumes/metrics/users collections volumes/search-es-snapshots
-  - chmod 777 volumes/search-es-snapshots
+  - mkdir -p volumes volumes/metrics volumes/metrics/users collections volumes/search-es-snapshots volumes/search-es
+  - chmod -R 777 volumes
   - cp search.testing.env search.env
   - cp snoop.testing.env snoop.env
   - docker-compose up -d
