@@ -3,7 +3,7 @@ services:
 install:
   - docker version
   - docker-compose version
-  - git clone https://github.com/hoover/docker-setup
+  - git clone https://github.com/jarib/docker-setup && git checkout es6
   - cd docker-setup
   - mkdir volumes volumes/metrics volumes/metrics/users collections volumes/search-es-snapshots
   - chmod 777 volumes/search-es-snapshots
